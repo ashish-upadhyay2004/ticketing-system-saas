@@ -7,6 +7,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Profile from "./pages/Profile";
 import SettingsPage from "./pages/Settings";
+import AdminAgents from "./pages/admin/AdminAgents";
 
 // Pages
 import Index from "./pages/Index";
@@ -110,6 +111,8 @@ const App = () => (
   <Route path="audit-logs" element={<AdminAuditLogs />} />
   <Route path="profile" element={<Profile />} />
   <Route path="settings" element={<SettingsPage />} />
+  <Route path="agents" element={<AdminAgents />} />
+
 </Route>
 
 
